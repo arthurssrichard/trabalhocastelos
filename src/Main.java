@@ -27,7 +27,14 @@ public class Main {
 
     public static void rodada(){
         ArrayList<Castelo> lista = new ArrayList<Castelo>();
-        lista.get(0);// continuar amanhann
+        atacar(lista.get(0), lista);
+    }
+
+    public static void atacar(Castelo castelo, ArrayList<Castelo> lista){
+        System.out.println("Selecione qual castelo quer atacar: ");
+        for(Castelo atacavel : lista){
+            System.out.println(atacavel);
+        }
     }
 
 }
